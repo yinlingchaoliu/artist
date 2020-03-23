@@ -1,15 +1,19 @@
 //
-//  MyVector.cpp
+//  MyVector.hpp
 //  artist
 //
 //  Created by 陈桐 on 2020/3/23.
 //  Copyright © 2020 chentong. All rights reserved.
 //
 
-#include "MyVector.hpp"
+#ifndef MyVector_hpp
+#define MyVector_hpp
+
+#include <stdio.h>
 
 //c++ 模板
 template <typename T>
+
 class MyVector{
 private:
     T *data;
@@ -18,7 +22,7 @@ private:
     
     //O(n)
     void resize(int newCapacity){
-        assert(newCapacity >= size);
+//        assert(newCapacity >= size);
         T *newData = new T[newCapacity];
         for (int i=0; i<size; i++) {
             newData[i] = data[i];
@@ -44,14 +48,14 @@ public:
         if (size == capacity) {
             resize(2*capacity);
         }
-        assert(size<capacity);
+//        static_assert(size<capacity,"");
         data[size++] = e;
     }
     
     //复杂度震荡 添加元素、删除元素，在临界值 会导致动荡
     //可以将元素个数为1/4时，为添加元素或删除元素留出预留空间
     T pop(){
-        assert(size > 0);
+//        static_assert(size > 0,"");
         T ret = data[--size];
         if (size == capacity/4) {
             resize(capacity/2);
@@ -60,3 +64,5 @@ public:
     }
     
 };
+
+#endif /* MyVector_hpp */

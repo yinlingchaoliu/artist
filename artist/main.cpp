@@ -9,27 +9,34 @@
 #include <iostream>
 #include <cmath>
 #include <ctime>
-#include "MyVector.cpp"
+#include "Test.cpp"
 
+/**
+ c++代码也需要回调，代理来保证测试程序的通用性
+ 本例采用lambda方式写更简单一些
+ */
+
+//计时器
+void timeFun(void (*pfun)(int n), int n);
+
+/**
+    主main函数要以代理方式，保证演示demo的可扩展性
+ */
 int main(int argc, const char * argv[]) {
     
     for (int i =10; i<=26; i++) {
         int n = pow(2,i);
-        clock_t startTime = clock();
-        MyVector<int> vec = MyVector<int>();//存放在堆上
-        
-        for (int i=0; i<n; i++) {
-            vec.push(i);
-        }
-        
-        for (int i=0; i<n; i++) {
-            vec.pop();
-        }
-        
-        clock_t endTime= clock();
-        std::cout << 2*n << "\t opertions: \t ";
-        std::cout << double(endTime - startTime)/CLOCKS_PER_SEC << " s\n" ;
+        //测试vector数组
+        timeFun(verctorCallback, n);
     }
-
     return 0;
 }
+
+//计时器
+void timeFun(void (*pfun)(int n), int n){
+    clock_t startTime = clock();
+    (*pfun)(n);
+    clock_t endTime= clock();
+    std::cout << 2*n << "\t opertions: \t ";
+    std::cout << double(endTime - startTime)/CLOCKS_PER_SEC << " s\n" ;
+};
