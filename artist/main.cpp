@@ -24,10 +24,21 @@ void timeFun(void (*pfun)(int n), int n);
  */
 int main(int argc, const char * argv[]) {
     
-    for (int i =10; i<=26; i++) {
+    //数量级测试 2048 ~ 134217728
+    for (int i =10; i<=12; i++) {
         int n = pow(2,i);
         //测试vector数组
-        timeFun(verctorCallback, n);
+//        timeFun(verctorCallback, n);
+        
+        //测试二分查找
+//        timeFun(binarySearchCallBack, n);
+        
+        //moveZero
+//        timeFun(moveZeroCallBack, n);
+//        timeFun(moveZeroCallBackPrint, n);
+        
+        //3路快速排序
+        timeFun(sortColorCallBack, n);
     }
     return 0;
 }
@@ -40,3 +51,4 @@ void timeFun(void (*pfun)(int n), int n){
     std::cout << 2*n << "\t opertions: \t ";
     std::cout << double(endTime - startTime)/CLOCKS_PER_SEC << " s\n" ;
 };
+

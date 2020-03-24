@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2A11F58F2428C9FA00B8C2F0 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A11F58E2428C9FA00B8C2F0 /* Test.cpp */; };
+		2A11F5952429A81900B8C2F0 /* BinaryFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A11F5932429A81900B8C2F0 /* BinaryFind.cpp */; };
+		2A11F5992429AE1100B8C2F0 /* MyUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A11F5972429AE1100B8C2F0 /* MyUtil.cpp */; };
+		2A11F59D2429C3C900B8C2F0 /* MoveZero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A11F59B2429C3C900B8C2F0 /* MoveZero.cpp */; };
+		2A11F5A12429E6C600B8C2F0 /* SortColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A11F59F2429E6C600B8C2F0 /* SortColor.cpp */; };
+		2A61B487242A0ACF0078B68C /* TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A61B485242A0ACF0078B68C /* TwoSum.cpp */; };
 		2AC4EA632428A5FE001745AF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4EA622428A5FE001745AF /* main.cpp */; };
 		2AC4EA6B2428A620001745AF /* MyVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4EA692428A620001745AF /* MyVector.cpp */; };
 /* End PBXBuildFile section */
@@ -26,6 +31,16 @@
 
 /* Begin PBXFileReference section */
 		2A11F58E2428C9FA00B8C2F0 /* Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
+		2A11F5932429A81900B8C2F0 /* BinaryFind.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryFind.cpp; sourceTree = "<group>"; };
+		2A11F5942429A81900B8C2F0 /* BinaryFind.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryFind.hpp; sourceTree = "<group>"; };
+		2A11F5972429AE1100B8C2F0 /* MyUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyUtil.cpp; sourceTree = "<group>"; };
+		2A11F5982429AE1100B8C2F0 /* MyUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyUtil.hpp; sourceTree = "<group>"; };
+		2A11F59B2429C3C900B8C2F0 /* MoveZero.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MoveZero.cpp; sourceTree = "<group>"; };
+		2A11F59C2429C3C900B8C2F0 /* MoveZero.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MoveZero.hpp; sourceTree = "<group>"; };
+		2A11F59F2429E6C600B8C2F0 /* SortColor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortColor.cpp; sourceTree = "<group>"; };
+		2A11F5A02429E6C600B8C2F0 /* SortColor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortColor.hpp; sourceTree = "<group>"; };
+		2A61B485242A0ACF0078B68C /* TwoSum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum.cpp; sourceTree = "<group>"; };
+		2A61B486242A0ACF0078B68C /* TwoSum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TwoSum.hpp; sourceTree = "<group>"; };
 		2AC4EA5F2428A5FE001745AF /* artist */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = artist; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC4EA622428A5FE001745AF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2AC4EA692428A620001745AF /* MyVector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyVector.cpp; sourceTree = "<group>"; };
@@ -52,6 +67,67 @@
 			path = MyVector;
 			sourceTree = "<group>";
 		};
+		2A11F5922429A7DE00B8C2F0 /* binaryFind */ = {
+			isa = PBXGroup;
+			children = (
+				2A11F5932429A81900B8C2F0 /* BinaryFind.cpp */,
+				2A11F5942429A81900B8C2F0 /* BinaryFind.hpp */,
+				2A11F5AC242A04B300B8C2F0 /* New Group */,
+			);
+			name = binaryFind;
+			sourceTree = "<group>";
+		};
+		2A11F5962429ADF000B8C2F0 /* MyUtil */ = {
+			isa = PBXGroup;
+			children = (
+				2A11F5972429AE1100B8C2F0 /* MyUtil.cpp */,
+				2A11F5982429AE1100B8C2F0 /* MyUtil.hpp */,
+			);
+			path = MyUtil;
+			sourceTree = "<group>";
+		};
+		2A11F59A2429C2BE00B8C2F0 /* MoveZeros */ = {
+			isa = PBXGroup;
+			children = (
+				2A11F59B2429C3C900B8C2F0 /* MoveZero.cpp */,
+				2A11F59C2429C3C900B8C2F0 /* MoveZero.hpp */,
+			);
+			path = MoveZeros;
+			sourceTree = "<group>";
+		};
+		2A11F59E2429E6A600B8C2F0 /* SortColor */ = {
+			isa = PBXGroup;
+			children = (
+				2A11F5AB242A04AC00B8C2F0 /* New Group */,
+				2A11F59F2429E6C600B8C2F0 /* SortColor.cpp */,
+				2A11F5A02429E6C600B8C2F0 /* SortColor.hpp */,
+			);
+			path = SortColor;
+			sourceTree = "<group>";
+		};
+		2A11F5AB242A04AC00B8C2F0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2A11F5AC242A04B300B8C2F0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		2A61B484242A0AAF0078B68C /* TwoSum */ = {
+			isa = PBXGroup;
+			children = (
+				2A61B485242A0ACF0078B68C /* TwoSum.cpp */,
+				2A61B486242A0ACF0078B68C /* TwoSum.hpp */,
+			);
+			path = TwoSum;
+			sourceTree = "<group>";
+		};
 		2AC4EA562428A5FE001745AF = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +147,11 @@
 		2AC4EA612428A5FE001745AF /* artist */ = {
 			isa = PBXGroup;
 			children = (
+				2A61B484242A0AAF0078B68C /* TwoSum */,
+				2A11F59E2429E6A600B8C2F0 /* SortColor */,
+				2A11F59A2429C2BE00B8C2F0 /* MoveZeros */,
+				2A11F5962429ADF000B8C2F0 /* MyUtil */,
+				2A11F5922429A7DE00B8C2F0 /* binaryFind */,
 				2A11F58D2428BF4900B8C2F0 /* MyVector */,
 				2AC4EA622428A5FE001745AF /* main.cpp */,
 				2A11F58E2428C9FA00B8C2F0 /* Test.cpp */,
@@ -136,7 +217,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A11F58F2428C9FA00B8C2F0 /* Test.cpp in Sources */,
+				2A11F5952429A81900B8C2F0 /* BinaryFind.cpp in Sources */,
+				2A61B487242A0ACF0078B68C /* TwoSum.cpp in Sources */,
 				2AC4EA6B2428A620001745AF /* MyVector.cpp in Sources */,
+				2A11F5992429AE1100B8C2F0 /* MyUtil.cpp in Sources */,
+				2A11F59D2429C3C900B8C2F0 /* MoveZero.cpp in Sources */,
+				2A11F5A12429E6C600B8C2F0 /* SortColor.cpp in Sources */,
 				2AC4EA632428A5FE001745AF /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
