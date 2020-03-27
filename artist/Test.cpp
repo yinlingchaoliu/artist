@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 #include "MyVector/MyVector.hpp"
-#include "MyUtil.hpp"
+#include "MyUtil/MyUtil.hpp"
 #include "BinaryFind.hpp"
 #include "MoveZero.hpp"
 #include "SortColor.hpp"
